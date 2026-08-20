@@ -1,0 +1,62 @@
+/* @import "tailwindcss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body, html{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(74, 74, 74);
+} */
+
+/* .main{
+  background-color: bisque;
+  color: blueviolet;
+  text-align: center;
+} */
+/* .p{
+  color: blueviolet;
+} */
+/* .Parent{
+  padding: 20px;
+  flex-wrap: wrap;
+  display: flex;
+}
+.card{
+  margin-right: 10px;
+  padding: 20px;
+  background-color: rgb(105, 93, 61);
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.card img{
+  margin-left: 60px;
+  height: 140px;
+  width: 140px;
+  padding: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card h2{
+  color: white;
+}
+.card p{
+  margin-top: 10px;
+  color: white;
+}
+.card button{
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+} */

@@ -1,0 +1,9 @@
+/* create a card */
+.test{
+    color: blueviolet;
+    text-decoration: solid;
+    text-transform: capitalize;
+    background-color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
