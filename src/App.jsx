@@ -1,6 +1,6 @@
 // import React from 'react'
 // import reactLogo from "./assets/react.svg"
-// import React, { useState } from "react";
+import { useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 // import Test from "./Test.jsx"
 // import Test1 from "./Test1.jsx"
@@ -13,7 +13,9 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 // import InputExample from "./component/InputExample.jsx";
 // import SimpleForm from "./component/SimpleForm.jsx";
 // import MultiForm from "./component/MultiForm.jsx";
-import BasicValidationForm from "./component/BasicValidationForm.jsx";
+// import BasicValidationForm from "./component/BasicValidationForm.jsx";
+import LogOut from "./component/LogOut.jsx";
+import Login from "./component/Login.jsx";
 
 
 
@@ -32,12 +34,14 @@ function App() {
   // ------------------------------------
   // const hobies = ["Reading","Minded Chess","Cricket"]
   // -------------------------------------------
-      function buttonfun(){
-        alert("Are you sure to submit this form!")
-      }
+      // function buttonfun(){
+      //   alert("Are you sure to submit this form!")
+      // }
+      const [a,b] = useState(true);
 
   return (
     <>
+      {a ? <LogOut/> : <Login/>}
       {/* <h1>May I help you?</h1> */}
       {/* <Test /> */}
       {/* <Test1 /> */}
@@ -49,7 +53,7 @@ function App() {
           {/* <InputExample/> */}
           {/* <SimpleForm /> */}
           {/* <MultiForm /> */}
-          <BasicValidationForm />
+          {/* <BasicValidationForm /> */}
 
     </>
   );
