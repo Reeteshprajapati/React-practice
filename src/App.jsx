@@ -1,15 +1,30 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import React, { useState, useContext } from "react";
-import A from "./component1/A.jsx";
+// import A from "./component1/A.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Contact from "./pages/Contact.jsx";
+import Navbar from "./pages/Navbar.jsx";
 
-const ThemesContext = React.createContext();
+
+// const ThemesContext = React.createContext();
 function App() {
-  const [theme, setTheme] = useState("Hello, Bhai!");
+  // const [theme, setTheme] = useState("Hello, Bhai!");
+    
   return (
     <>
-      <ThemesContext.Provider value={theme}>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact/>} />
+      </Routes>
+    </BrowserRouter>
+
+    <Navbar/>
+      {/* <ThemesContext.Provider value={theme}>
         <A />
-      </ThemesContext.Provider>
+      </ThemesContext.Provider> */}
 
     </>
   );
@@ -23,7 +38,7 @@ function App() {
 // }
 
 export default App;
-export { ThemesContext };
+// export { ThemesContext };
 
 //  <h2>{a+3}</h2>
 //       <h2>{a}</h2>
