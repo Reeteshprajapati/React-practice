@@ -14,9 +14,10 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 // import SimpleForm from "./component/SimpleForm.jsx";
 // import MultiForm from "./component/MultiForm.jsx";
 // import BasicValidationForm from "./component/BasicValidationForm.jsx";
-import LogOut from "./component/LogOut.jsx";
-import Login from "./component/Login.jsx";
-
+// import LogOut from "./component/LogOut.jsx";
+// import Login from "./component/Login.jsx";
+import UseStateBasic from "./component/UseStateBasic.jsx";
+import LonggerComponent from "./component/LonggerComponent.jsx";
 
 
 function App() {
@@ -37,11 +38,11 @@ function App() {
       // function buttonfun(){
       //   alert("Are you sure to submit this form!")
       // }
-      const [a,b] = useState(true);
+      // const [a,b] = useState(true);
 
   return (
     <>
-      {a ? <LogOut/> : <Login/>}
+      {/* {a ? <LogOut/> : <Login/>} */}
       {/* <h1>May I help you?</h1> */}
       {/* <Test /> */}
       {/* <Test1 /> */}
@@ -54,6 +55,8 @@ function App() {
           {/* <SimpleForm /> */}
           {/* <MultiForm /> */}
           {/* <BasicValidationForm /> */}
+          {/* <UseStateBasic /> */}
+          {/* <LonggerComponent /> */}
 
     </>
   );
