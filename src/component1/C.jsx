@@ -1,12 +1,10 @@
 import React from 'react'
-import {ThemesContext} from '../App'
-import { useContext } from 'react'
-
+import { ThemesContext } from '../App'
 
 const C = () => {
-  const theme = useContext(ThemesContext);
+    const theme = React.useContext(ThemesContext);
   return (
-    <div>Hello, {theme}!</div>
+    <div>{theme}</div>
   )
 }
 

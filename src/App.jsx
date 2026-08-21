@@ -1,14 +1,13 @@
-import { useState, useContext, createContext } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import A from "./component1/A";
+import React, { useState, useContext } from "react";
+import A from "./component1/A.jsx";
 
-const ThemesContext = createContext();
-
+const ThemesContext = React.createContext();
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState("Hello, Bhai!");
   return (
     <>
-      <ThemesContext.Provider value={"Harry Bhai"}>
+      <ThemesContext.Provider value={theme}>
         <A />
       </ThemesContext.Provider>
 
@@ -25,6 +24,7 @@ function App() {
 
 export default App;
 export { ThemesContext };
+
 //  <h2>{a+3}</h2>
 //       <h2>{a}</h2>
 //       <h1 className='main'>Hello, World!</h1>
